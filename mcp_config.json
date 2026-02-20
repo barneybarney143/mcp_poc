@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+        "calculator": {
+            "command": "./venv/bin/python3",
+            "args": [
+                "${CHROME_EXTENSION_PATH:-.}/mcp_server.py"
+            ],
+            "env": {},
+            "disabled": false
+        }
+    }
+}
