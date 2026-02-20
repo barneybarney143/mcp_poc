@@ -39,3 +39,12 @@ Run the included test script to ensure the server is working correctly:
 ```bash
 python3 test_server.py
 ```
+
+## Standalone Usage (No Extensions)
+If you don't want to use VSCode extensions, you can interact with the server directly using the provided `mcp_client.py`:
+
+```bash
+# Ensure venv is activated
+python3 mcp_client.py
+```
+This will launch an interactive terminal where you can type math problems (e.g., `10 + 20`) and see the MCP server handle the request in real-time.
