@@ -40,11 +40,18 @@ Run the included test script to ensure the server is working correctly:
 python3 test_server.py
 ```
 
-## Standalone Usage (No Extensions)
-If you don't want to use VSCode extensions, you can interact with the server directly using the provided `mcp_client.py`:
+## Setup on a New PC
+If you are moving to a different machine:
 
-```bash
-# Ensure venv is activated
-python3 mcp_client.py
-```
-This will launch an interactive terminal where you can type math problems (e.g., `10 + 20`) and see the MCP server handle the request in real-time.
+1.  **Clone the repo**: `git clone https://github.com/barneybarney143/mcp_poc.git`
+2.  **Run Setup**:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    ```
+3.  **Update Path**: 
+    MCP servers usually require **absolute paths**. Open your VSCode MCP settings and update the `command` and `args` to match the location of the project on your new machine.
+
+    > [!TIP]
+    > If you use the **Roo Code** extension, it can automatically detect the `mcp_config.json` in the root of this workspace using relative paths!
